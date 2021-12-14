@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`module should export a stable API 1`] = `
+Object {
+  "SODIUM_PWHASH_DEFAULTS": Object {
+    "memlimit": 268435456,
+    "opslimit": 3,
+  },
+  "hash": [Function],
+  "hashSync": [Function],
+  "needsRehash": [Function],
+  "verify": [Function],
+  "verifySync": [Function],
+}
+`;
