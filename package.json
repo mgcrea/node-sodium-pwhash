@@ -16,7 +16,6 @@
   "author": "Olivier Louvignes <olivier@mgcrea.io>",
   "license": "MIT",
   "devDependencies": {
-    "@mgcrea/fastify-session": "^0.14.2",
     "@tsconfig/node10": "^1.0.8",
     "@types/jest": "^27.0.3",
     "@types/sodium-native": "^2.3.5",
