@@ -1,24 +1,28 @@
 # Node Sodium Password Hash
 
-<!-- markdownlint-disable no-inline-html -->
+<!-- markdownlint-disable MD033 -->
 <p align="center">
   <a href="https://www.npmjs.com/package/@mgcrea/node-sodium-pwhash">
     <img src="https://img.shields.io/npm/v/@mgcrea/node-sodium-pwhash.svg?style=for-the-badge" alt="npm version" />
   </a>
-  <!-- <a href="https://www.npmjs.com/package/@mgcrea/node-sodium-pwhash">
+  <a href="https://www.npmjs.com/package/@mgcrea/node-sodium-pwhash">
     <img src="https://img.shields.io/npm/dt/@mgcrea/node-sodium-pwhash.svg?style=for-the-badge" alt="npm total downloads" />
-  </a> -->
+  </a>
   <a href="https://www.npmjs.com/package/@mgcrea/node-sodium-pwhash">
     <img src="https://img.shields.io/npm/dm/@mgcrea/node-sodium-pwhash.svg?style=for-the-badge" alt="npm monthly downloads" />
   </a>
   <a href="https://www.npmjs.com/package/@mgcrea/node-sodium-pwhash">
     <img src="https://img.shields.io/npm/l/@mgcrea/node-sodium-pwhash.svg?style=for-the-badge" alt="npm license" />
   </a>
+  <br />
   <a href="https://github.com/mgcrea/node-sodium-pwhash/actions/workflows/main.yml">
-    <img src="https://img.shields.io/github/workflow/status/mgcrea/node-sodium-pwhash/main?style=for-the-badge" alt="github main workflow" />
+    <img src="https://img.shields.io/github/actions/workflow/status/mgcrea/node-sodium-pwhash/main.yml?style=for-the-badge&branch=master" alt="build status" />
+  </a>
+  <a href="https://depfu.com/github/mgcrea/node-sodium-pwhash">
+    <img src="https://img.shields.io/depfu/dependencies/github/mgcrea/node-sodium-pwhash?style=for-the-badge" alt="dependencies status" />
   </a>
 </p>
-<!-- markdownlint-enable no-inline-html -->
+<!-- markdownlint-enable MD037 -->
 
 ## Features
 
