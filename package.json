@@ -2,36 +2,64 @@
   "name": "@mgcrea/node-sodium-pwhash",
   "version": "0.2.0",
   "description": "Fast sodium-based crypto for password hashing",
-  "main": "lib/index.js",
-  "bin": {
-    "node-sodium-pwhash": "./lib/bin/node-sodium-pwhash.js"
+  "author": "Olivier Louvignes <olivier@mgcrea.io>",
+  "repository": "github:mgcrea/fastify-session-prisma-store",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
   },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "node-sodium-jwt": "./dist/bin/cli.cjs"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "secure",
+    "jwt",
+    "sodium"
+  ],
   "scripts": {
-    "build": "rm -rf lib/*; tsc --build",
+    "start": "npm run spec -- --watch",
+    "build": "tsup --entry src/index.ts --format cjs,esm --sourcemap --dts --clean --entry src/bin/cli.ts",
+    "postbuild": "shebang-trim dist/bin/cli.js dist/bin/cli.cjs",
     "lint": "eslint src/ test/",
     "prettycheck": "prettier --check src/ test/",
+    "prettify": "prettier --write src/ test/",
     "typecheck": "tsc --noEmit",
-    "test": "npm run lint && npm run prettycheck && npm run typecheck"
-  },
-  "author": "Olivier Louvignes <olivier@mgcrea.io>",
-  "license": "MIT",
-  "devDependencies": {
-    "@tsconfig/node10": "^1.0.8",
-    "@types/jest": "^27.0.3",
-    "@types/sodium-native": "^2.3.5",
-    "@typescript-eslint/eslint-plugin": "^5.7.0",
-    "@typescript-eslint/parser": "^5.7.0",
-    "eslint": "^8.4.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-jest": "^25.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "jest": "^27.4.5",
-    "prettier": "^2.5.1",
-    "ts-jest": "^27.1.1",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.5.4"
+    "spec": "vitest --run",
+    "test": "npm run lint && npm run prettycheck && npm run typecheck && npm run spec",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "sodium-native": "^3.3.0"
+    "sodium-native": "^4.0.4"
+  },
+  "devDependencies": {
+    "@mgcrea/eslint-config-node": "^0.8.1",
+    "@tsconfig/node-lts": "^18.12.5",
+    "@tsconfig/strictest": "^2.0.1",
+    "@types/debug": "^4.1.8",
+    "@types/node": "^18.17.14",
+    "@types/sodium-native": "^2.3.5",
+    "benchmark": "^2.1.4",
+    "eslint": "^8.48.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "prisma": "^5.2.0",
+    "shebang-trim": "^1.2.0",
+    "tsup": "^7.2.0",
+    "tsx": "^3.12.8",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.3"
   }
 }

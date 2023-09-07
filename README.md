@@ -1,5 +1,6 @@
-# node-sodium-pwhash
+# Node Sodium Password Hash
 
+<!-- markdownlint-disable no-inline-html -->
 <p align="center">
   <a href="https://www.npmjs.com/package/@mgcrea/node-sodium-pwhash">
     <img src="https://img.shields.io/npm/v/@mgcrea/node-sodium-pwhash.svg?style=for-the-badge" alt="npm version" />
@@ -17,6 +18,7 @@
     <img src="https://img.shields.io/github/workflow/status/mgcrea/node-sodium-pwhash/main?style=for-the-badge" alt="github main workflow" />
   </a>
 </p>
+<!-- markdownlint-enable no-inline-html -->
 
 ## Features
 

@@ -1,4 +1,4 @@
-import sodium from 'sodium-native';
+import sodium from "sodium-native";
 
 export const SODIUM_PWHASH_DEFAULTS = {
   opslimit: sodium.crypto_pwhash_OPSLIMIT_MODERATE,
