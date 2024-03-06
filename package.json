@@ -1,6 +1,6 @@
 {
   "name": "@mgcrea/node-sodium-pwhash",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Fast sodium-based crypto for password hashing",
   "author": "Olivier Louvignes <olivier@mgcrea.io>",
   "repository": "github:mgcrea/fastify-session-prisma-store",
