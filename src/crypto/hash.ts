@@ -1,5 +1,5 @@
 import sodium from "sodium-native";
-import { asBuffer } from "../utils";
+import { asBuffer, asTruncatedString } from "../utils";
 import { SODIUM_PWHASH_DEFAULTS } from "./defaults";
 
 export const hashSync = (
@@ -23,6 +23,24 @@ export const hash = (
       err ? reject(err) : resolve(output);
     });
   });
+};
+
+export const hashStringSync = (
+  password: Buffer | string,
+  opslimit: number = SODIUM_PWHASH_DEFAULTS.opslimit,
+  memlimit: number = SODIUM_PWHASH_DEFAULTS.memlimit,
+): string => {
+  const buffer = hashSync(password, opslimit, memlimit);
+  return asTruncatedString(buffer);
+};
+
+export const hashString = async (
+  password: Buffer | string,
+  opslimit: number = SODIUM_PWHASH_DEFAULTS.opslimit,
+  memlimit: number = SODIUM_PWHASH_DEFAULTS.memlimit,
+): Promise<string> => {
+  const buffer = await hash(password, opslimit, memlimit);
+  return asTruncatedString(buffer);
 };
 
 export const needsRehash = (

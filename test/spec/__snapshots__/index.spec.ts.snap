@@ -7,6 +7,8 @@ exports[`module > should export a stable API 1`] = `
     "opslimit": 3,
   },
   "hash": [Function],
+  "hashString": [Function],
+  "hashStringSync": [Function],
   "hashSync": [Function],
   "needsRehash": [Function],
   "verify": [Function],
