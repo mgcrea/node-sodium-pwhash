@@ -1,4 +1,4 @@
-import { hash, hashString, hashStringSync, hashSync } from "src/crypto";
+import { hash, hashSync, hashToString, hashToStringSync } from "src/crypto";
 import { describe, expect, it } from "vitest";
 
 describe("SodiumAuth", () => {
@@ -22,7 +22,7 @@ describe("SodiumAuth", () => {
 
   it("should properly hash a password to a string", async () => {
     const password = Buffer.from("MyPassw0rd!");
-    const hashed = hashStringSync(password);
+    const hashed = hashToStringSync(password);
     expect(hashed).toBeDefined();
     expect(typeof hashed).toBe("string");
     expect(hashed.length < 128).toBeTruthy();
@@ -30,7 +30,7 @@ describe("SodiumAuth", () => {
 
   it("should properly async hash a password to a string", async () => {
     const password = Buffer.from("MyPassw0rd!");
-    const hashed = await hashString(password);
+    const hashed = await hashToString(password);
     expect(hashed).toBeDefined();
     expect(typeof hashed).toBe("string");
     expect(hashed.length < 128).toBeTruthy();

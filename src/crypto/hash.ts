@@ -25,7 +25,7 @@ export const hash = (
   });
 };
 
-export const hashStringSync = (
+export const hashToStringSync = (
   password: Buffer | string,
   opslimit: number = SODIUM_PWHASH_DEFAULTS.opslimit,
   memlimit: number = SODIUM_PWHASH_DEFAULTS.memlimit,
@@ -34,7 +34,7 @@ export const hashStringSync = (
   return asTruncatedString(buffer);
 };
 
-export const hashString = async (
+export const hashToString = async (
   password: Buffer | string,
   opslimit: number = SODIUM_PWHASH_DEFAULTS.opslimit,
   memlimit: number = SODIUM_PWHASH_DEFAULTS.memlimit,

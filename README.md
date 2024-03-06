@@ -43,6 +43,15 @@ pnpm add @mgcrea/node-sodium-pwhash sodium-native
 
 ## Quickstart
 
+```ts
+import { hash, hashToString } from "@mgcrea/node-sodium-pwhash";
+
+const hashed: Buffer = await hash("MyPassword");
+// const hashedString: string = await hashToString("MyPassword");
+
+const verify: boolean = await verify(hashed, "MyPassword");
+```
+
 ### Hash a password
 
 Copy a freshly generated `secretKey` from the bundled cli:
