@@ -48,13 +48,13 @@ pnpm add @mgcrea/node-sodium-pwhash sodium-native
 Copy a freshly generated `secretKey` from the bundled cli:
 
 ```sh
-node_modules/.bin/node-sodium-pwhash hash MyPassword
+npx node-sodium-pwhash hash MyPassword
 ```
 
 ### Verify a password
 
 ```sh
-node_modules/.bin/node-sodium-pwhash hash MyPassword | node_modules/.bin/node-sodium-pwhash verify MyPassword
+npx node-sodium-pwhash hash MyPassword | npx node-sodium-pwhash verify MyPassword
 ```
 
 ## Authors

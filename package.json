@@ -16,7 +16,7 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "node-sodium-jwt": "./dist/bin/cli.cjs"
+    "node-sodium-pwhash": "./dist/bin/cli.cjs"
   },
   "engines": {
     "node": ">=12"
@@ -26,7 +26,8 @@
   ],
   "keywords": [
     "secure",
-    "jwt",
+    "password",
+    "pwhash",
     "sodium"
   ],
   "scripts": {
