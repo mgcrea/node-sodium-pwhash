@@ -41,8 +41,8 @@
     "test": "npm run lint && npm run prettycheck && npm run typecheck && npm run spec",
     "prepublishOnly": "npm run build"
   },
-  "dependencies": {
-    "sodium-native": "^4.0.10"
+  "peerDependencies": {
+    "sodium-native": ">=4"
   },
   "devDependencies": {
     "@mgcrea/eslint-config-node": "^0.10.0",
@@ -57,6 +57,7 @@
     "prettier-plugin-organize-imports": "^3.2.4",
     "prisma": "^5.10.2",
     "shebang-trim": "^1.2.0",
+    "sodium-native": "^4.0.10",
     "tsup": "^8.0.2",
     "tsx": "^4.7.1",
     "typescript": "^5.3.3",

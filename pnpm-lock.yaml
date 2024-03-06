@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  sodium-native:
-    specifier: ^4.0.10
-    version: 4.0.10
-
 devDependencies:
   '@mgcrea/eslint-config-node':
     specifier: ^0.10.0
@@ -46,6 +41,9 @@ devDependencies:
   shebang-trim:
     specifier: ^1.2.0
     version: 1.2.0
+  sodium-native:
+    specifier: ^4.0.10
+    version: 4.0.10
   tsup:
     specifier: ^8.0.2
     version: 8.0.2(typescript@5.3.3)
@@ -1832,7 +1830,7 @@ packages:
   /node-gyp-build@4.6.1:
     resolution: {integrity: sha512-24vnklJmyRS8ViBNI8KbtK/r/DmXQMRiOMXTNz2nrTnAYUwjmEEbnnpB/+kt+yWRv73bPsSPRFddrcIbAxSiMQ==}
     hasBin: true
-    dev: false
+    dev: true
 
   /normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
@@ -2181,7 +2179,7 @@ packages:
     requiresBuild: true
     dependencies:
       node-gyp-build: 4.6.1
-    dev: false
+    dev: true
 
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}

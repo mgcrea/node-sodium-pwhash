@@ -36,7 +36,9 @@ Fast sodium-based crypto for hashing password
 ## Install
 
 ```bash
-npm install @mgcrea/node-sodium-pwhash --save
+npm install @mgcrea/node-sodium-pwhash sodium-native --save
+// -or-
+pnpm add @mgcrea/node-sodium-pwhash sodium-native
 ```
 
 ## Quickstart
