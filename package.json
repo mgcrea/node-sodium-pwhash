@@ -39,6 +39,8 @@
     "prettify": "prettier --write src/ test/",
     "typecheck": "tsc --noEmit",
     "spec": "vitest --run",
+    "setbench": "vitest bench --outputJson test/bench.json",
+    "bench": "vitest bench --compare test/bench.json",
     "test": "npm run lint && npm run prettycheck && npm run typecheck && npm run spec",
     "prepublishOnly": "npm run build"
   },
